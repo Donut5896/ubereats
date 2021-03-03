@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+
+.toggle{
+    position: fixed;
+    top: 2rem;
+    left: 3rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+
+.sideBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:250px;
+    margin-top: 60px;
+    background: rgb(102, 42, 42);
+    row-gap: 1rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    transform: translate(-100%);
+    transition:  all 0.3s linear;
+}
+
+.show{
+    transform: translate(0);
+}
+.hide{
+    transform: translate(-100%);
+}
+
+.sidebar-top{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+}
+
+.sign-in{
+    padding: 1rem 5rem;
+    color: #fff;
+    background: #000000;
+    width: auto;
+    min-height: 56px;
+    margin: 2rem;
+    font-size: 24px;
+    display: flex;
+}
+
+.sidebar-bottom li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+@media screen and (min-width: 676px){
+    .sideBar{
+        width: 400px;
+    }
+}
