@@ -14,31 +14,39 @@
 <body>
    
         
-            <div class="logo"></div>
-            <button class="toggle">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </button>
+           
 
-            <!--sidebar menu-->
+            <!--sidebar-->
             <aside class="sideBar " id="sideBar">  
                     <div class="sidebar-top">
-                        <button class="close-btn">
-                            <i class="fas fa-times"></i>
-                          </button>
-                        <button class="sign-in">sign in</button>
+                        <button class="sign-in">Sign in</button>
                         <li>Create a business account</li>
                         <li>Add your restuarant</li>
                         <li>Sign up to delivery</li>
                     </div>
                     <ul class="sidebar-bottom">
-                        <li><img src="./images/logo.jpg" alt="logo"></li>
-                        <li><p>there's more to love in the app</p></li>
-                        <li><i class="fa fa-android" aria-hidden="true">Android</i></li>
-                        <li><i class="fa fa-apple" aria-hidden="true">iPhone</i></li>
+                        <li class="top"><img src="./images/l.svg" alt="logo">
+                        <p>there's more to love in the app</p></li>
+                        <li class="bottom">
+                            <i class="fa fa-android" aria-hidden="true"><span>Android</span></i>
+                            <i class="fa fa-apple" aria-hidden="true"><span>iPhone</span></i>
+                        </li>
                     </ul>
-              
             </aside>    
-       
+
+            <!--page content-->
+            <div class="overlay" id="myOverlay"></div>
+
+
+            <!--toggle-->
+            <div class="content">
+                <button class="toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <div class="content">
+                    <img src="./images/uber-eats-logo-6.png" alt="">
+                </div>
+            </div>
     
     <script src="main.js"></script>
 </body>
