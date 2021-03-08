@@ -255,10 +255,10 @@ body{
     justify-content: space-evenly;
     align-items: center;
     width: 95%;
-    height: 150px;
+    height: 200px;
     border-bottom: 1px solid rgb(226, 226, 226);
     margin-left: 30px;
-    margin-right: 30px
+    margin-right: 30px;
 }
 .grid-icons{
     display: flex;
@@ -293,4 +293,60 @@ body{
     cursor: pointer;
     color: inherit;
     width: 100%;
+}
+
+/* national brand */
+ .national-brands{
+    height: 307px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+ }
+.brands{
+    display: flex;
+}
+.brand{
+    display: flex;   
+    height: 300px;
+}
+.ad{
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-ad img{
+    width: 404px;
+    height: 180px;
+}
+
+.likes{
+    position: absolute;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    cursor: pointer;
+}
+.like{
+    position: relative;
+}
+
+.svg {
+    position: absolute;
+    width: 24px;
+    background: transparent;
+    cursor: pointer;
+    color: #e2e2e2;
+    right: 5px
+}
+svg:hover{
+    content: "";
+    fill: rgb(225, 225, 225);
+    overflow: hidden;
+    background: #e2e2e2;
 }
