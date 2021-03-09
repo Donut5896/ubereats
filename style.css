@@ -332,21 +332,109 @@ body{
     width: 100%;
     cursor: pointer;
 }
+/*
 .like{
     position: relative;
 }
 
-.svg {
+SVG{
     position: absolute;
     width: 24px;
-    background: transparent;
+    height: 24px;
     cursor: pointer;
-    color: #e2e2e2;
-    right: 5px
+    right: 5px;
+    fill: rgb(255, 255, 255);
 }
-svg:hover{
-    content: "";
-    fill: rgb(225, 225, 225);
-    overflow: hidden;
-    background: #e2e2e2;
+
+
+
+SVG:hover{
+  
+    fill: #e2e2e2;
+    transition: fill 3s ease-out
+}
+
+#donut:hover{
+    fill: red;
+    color: #EEEEEE;
+      fill-rule: nonzero;
+      background: #e2e2e2;
+}
+*/
+.like{
+    fill:transparent;
+    stroke: #e2e2e2;
+    stroke-width: 2;
+    cursor: pointer;
+    position: relative;
+}
+svg{
+    overflow: visible;
+    width: 2rem;
+}
+
+path{
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1550;
+    transform-origin: center;
+}
+.heart-bg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    stroke: none;
+}
+
+.heart:hover path{
+    animation: stroke-animation 1s ease-in-out forwards;
+
+}
+.heart:hover ~ .heart-bg path{
+    animation: fade-animation 1s ease-in-out forwards;
+}
+
+@keyframes stroke-animation{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    30%{
+        stroke-dashoffset: 1550;
+    }
+    60%{
+        stroke-dashoffset: 3100;
+        fill: transparent;
+        transform: scale(1);
+    }
+    80%{
+       fill: #e2e2e2;
+       transform: scale(1.1);
+
+    }
+    90%{
+        transform: scale(1);
+    }
+    100%{
+        stroke-dashoffset: 3100;
+        fill: #e2e2e2;
+    }
+}
+
+@keyframes fade-animation{
+    70%{
+        fill: transparent;
+        transform: scale(1);
+    }
+    80%{
+        fill: #fff;
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(5);
+        opacity: 0;
+    }
 }
