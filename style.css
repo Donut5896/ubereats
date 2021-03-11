@@ -326,6 +326,8 @@ body{
     justify-content: flex-end;
     
 }
+
+/* arrow */
 .arrow-left,
 .arrow-right{
     height: 40px;
@@ -336,8 +338,11 @@ body{
     justify-content: center;
     display: inline-flex;
     cursor: pointer;
-    font-size: 24px;
-    font-weight: 900;
+    font-size: 28px;
+    font-weight: bold;
+}
+.darker{
+    background: #b6b1b1;
 }
 
 .brand{
