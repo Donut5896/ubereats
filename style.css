@@ -371,23 +371,30 @@ body{
     flex-basis: 100%;
     scroll-snap-align: start;
     margin-left: 25px;
+    height: 400px;
 }
 .ad{
-    min-width: 404px;
+    max-width: 300px;
     height: 180px;
     position: relative;
     left: 0;
     text-align: center;
     transition: 0.5s;
-    margin-right: 24px;
+    margin-right: 22px;
+    display: flex;
+    flex-direction: column;
 }
 
 .img-ad img{
-    width: 404px;
-    height: 180px;
+    width: 299px;
+    height: 150px;
 }
 
-
+.price{
+    z-index: 5;
+    color: #222;
+    position: absolute;
+}
 /* heart button */
 
 .likes{
