@@ -256,13 +256,12 @@ body{
     width: 100vw;
     height: 200px;
     border-bottom: 1px solid rgb(226, 226, 226);
-    margin-left: 30px;
-    margin-right: 30px;
 }
 .grid-icons{
     display: flex;
-    justify-content: center;
-
+    justify-content: space-evenly;
+    align-items: flex-start;
+    min-width: 100%;
 }
 .icon{
     display: flex;
@@ -283,8 +282,8 @@ body{
 }
 
 .icon li img{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 84px;
 }
 .icon li h2{
     line-height: 16px;
@@ -295,39 +294,48 @@ body{
 }
 
 /* national brand */
- .national-brands{
-    height: 300px;
-    width: 100vw;
+ .section{
+    height: 350px;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    display: block;
-    margin-left: 30px;
-    margin-right: 30px;
+    display: flex;
+    position: relative;
+    margin-bottom: 1rem;
  }
 .brands{
     display: flex;
     flex-direction: column;
-    width: 98%;
-    height: 300px;
-    position: relative;
-   
+    width: 96%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;  
 }
 .slide{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
-    margin: 4rem 2rem 0;
+    margin: 4rem 0 2rem 0;
+    width: 95%;
 }
-.slide h1{
+.head {
     width: 100%;
-    margin: 10px 1rem;
     display: flex;
-    justify-content: flex-end;
-    
+    justify-content: flex-start;
+    font-size: 26px;
+    flex-direction: column;
+}
+.head p{
+    font-size: 16px;
 }
 
 /* arrow */
+.arrow{
+    display: flex;
+    width: 9%;
+    justify-content: space-evenly;
+}
 .arrow-left,
 .arrow-right{
     height: 40px;
@@ -338,8 +346,8 @@ body{
     justify-content: center;
     display: inline-flex;
     cursor: pointer;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: normal;
 }
 .darker{
     background: #b6b1b1;
@@ -351,10 +359,7 @@ body{
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-
-    
-    
-
+    width: 98%;
 }
 
 /* hide scroll bar*/
@@ -385,17 +390,65 @@ body{
     flex-direction: column;
 }
 
+.img-ad{
+    width: 325px;
+}
 .img-ad img{
-    width: 299px;
+    width: 340px;
     height: 150px;
 }
 
+/* price deatail */
+.detail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    font-size: 18px;
+}
+.detail .point{
+    border-radius: 50%;
+    background: #EEEEEE;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 16px;
+}
 .price{
-    z-index: 5;
+    z-index: 2;
     color: #222;
     position: absolute;
+    top: 110%;
+    font-size: 14px;
 }
+
+.price img{
+    height: 15px;
+}
+
+
 /* heart button */
+
+.discount{
+    background-color: rgb(5, 163, 87);
+    border-top-right-radius: 50px 50px;
+    border-bottom-right-radius: 50px 50px;
+    padding: 4px 12px;
+    font-size: 14px;
+    color: #fff;
+    position:  absolute ;
+    left: 0;
+    top: 20%;
+}
+
+
+
+
 
 .likes{
     position: absolute;
@@ -416,7 +469,8 @@ body{
 }
 svg{
     overflow: visible;
-    width: 2rem;
+    width: 20px;
+    height: 20px;
 }
 
 path{
@@ -487,3 +541,128 @@ path{
         opacity: 0;
     }
 }*/
+
+/* popular brand */
+
+
+.circle{
+    margin: 5rem auto;
+   height: 300px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+} 
+.circle img{
+  
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+   
+}
+
+.circle p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    color: #fff;
+    padding: 72px 0px 88px;
+    margin-top: 80px;
+    height: 450px;
+    min-width: 1024px;
+    max-width: 1920px;
+    padding: 0 40px;
+}
+.footer{
+    display: flex;
+    padding-top: 3rem;
+}
+.first{
+    width: 635px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex: 2;
+}
+.uber{
+    display: flex;
+   
+}
+
+.uber img{
+    height: 40px;
+    width: auto;
+}
+
+.logo-footer{
+    height: 40px;
+    width: auto;
+}
+.about{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    height: 230px;
+    justify-content: space-around;
+}
+
+.help{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    height: 230px;
+    justify-content: space-around;
+}
+
+
+.buttom-footer{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.line{
+    width: 99%;
+    height: 1px;
+    background-color: #fff;
+    margin: 2rem 0;
+}
+
+.buttom-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.social {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.fa-instagram,
+.fa-twitter,
+.fa-facebook-square{
+    font-size: 24px;
+}
+.policy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
