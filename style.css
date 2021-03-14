@@ -184,7 +184,7 @@ body{
     text-align: center;
     border-radius: 400px;
     line-height: 16px;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
     display: block;
    
@@ -205,13 +205,17 @@ body{
     padding: 0 10px;
     font-size: 14px;
     flex-grow: 2;
+    
 }
 .map-content i{
     margin: 0 5px;
 }
 .map-content span{
     margin: 0 5px;
-    flex-wrap: nowrap;
+    
+}
+p.city{
+    white-space: nowrap;
 }
 .dot{
     margin: 0 10px;
@@ -614,7 +618,7 @@ footer{
     flex-direction: column;
     height: 100%;
     width: auto;
-    align-items: center;
+    align-items: left;
     height: 230px;
     justify-content: space-around;
 }
@@ -623,7 +627,7 @@ footer{
     display: flex;
     flex-direction: column;
     flex: 1;
-    align-items: center;
+    align-items: left;
     height: 230px;
     justify-content: space-around;
 }
