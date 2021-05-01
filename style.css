@@ -392,8 +392,9 @@ p.city{
     width: 325px;
 }
 .img-ad img{
-    width: 340px;
+    width: 310px;
     height: 150px;
+    object-fit: cover;
 }
 
 /* price deatail */
