@@ -441,7 +441,7 @@ p.city{
     font-size: 14px;
     color: #fff;
     position:  absolute ;
-    left: 2%;
+    left: 0;
     top: 30%;
 }
 
@@ -623,10 +623,9 @@ footer{
         width: 300px;
     }
     .discount{
-        left: 0;
+        left: 2.5%;
     }
   
-
 }
 
 @media screen and (max-width: 800px){
