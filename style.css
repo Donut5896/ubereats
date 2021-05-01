@@ -441,8 +441,8 @@ p.city{
     font-size: 14px;
     color: #fff;
     position:  absolute ;
-    left: 0;
-    top: 20%;
+    left: 2%;
+    top: 30%;
 }
 
 
@@ -621,6 +621,9 @@ footer{
 @media screen and (min-width: 676px){
     .sideBar{
         width: 300px;
+    }
+    .discount{
+        left: 0;
     }
   
 
